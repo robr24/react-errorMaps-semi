@@ -36,7 +36,6 @@ export default function CheckErrors() {
   }, []);
 
   useEffect(() => {
-    console.log('RESPONSe: ', resp);
     const errors = resp
       ? resp.response.autoCorrectedItems.reduce((prev, next) => {
           const errorCode = [next.errors[0]];
@@ -57,8 +56,6 @@ export default function CheckErrors() {
       ).displayMessage.replace('{totalCount}', errors[err].items.length),
       ...errors[err],
     }));
-
-    console.log('ERRORS: ', formattedErrors);
 
     setErrors(formattedErrors);
   }, [resp]);
