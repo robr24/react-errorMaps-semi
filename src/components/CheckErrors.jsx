@@ -63,10 +63,6 @@ export default function CheckErrors() {
     setErrors(formattedErrors);
   }, [resp]);
 
-  useEffect(() => {
-    // console.log('ERRORS: ', errors);
-  }, [errors]);
-
   return (
     <div>
       {errors.map((error, index) => (
