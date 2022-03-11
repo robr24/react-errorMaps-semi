@@ -1,0 +1,12 @@
+{
+  "errors": [
+    {
+      "errorCode": "INVALID_SHIP_ADDRESS",
+      "displayMessage": "{totalCount} items cannot be shipped to this address."
+    },
+    {
+      "errorCode": "INVENTORY_AVAILABILITY_OUTOFSTOCK",
+      "displayMessage": "{totalCount} items are out of stock."
+    }
+  ]
+}
